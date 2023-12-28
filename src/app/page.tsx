@@ -4,13 +4,13 @@ import * as actions from '@/actions'
  import Profile from '@/components/profile'
 import Header from "@/components/header";
 
-export default async function Home() {
+export default   function Home() {
 
-  const  session = await auth()
+  // const  session = await auth()
   return (
     <div>
-      
-      <form action={actions.signIn}>
+      Home Page
+      {/* <form action={actions.signIn}>
       <Button type="submit">Click </Button>
       </form>
 
@@ -20,7 +20,7 @@ export default async function Home() {
 {
   session?.user? <div>{JSON.stringify(session.user)}</div> : <div>Signed out</div>
 }
-    <Profile /> 
+    <Profile />  */}
     </div>
     
   )
