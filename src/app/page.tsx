@@ -10,7 +10,9 @@ export default   function Home() {
   return (
     <div>
       Home Page
-      {/* <form action={actions.signIn}>
+      {
+        
+      /* <form action={actions.signIn}>
       <Button type="submit">Click </Button>
       </form>
 
@@ -20,7 +22,8 @@ export default   function Home() {
 {
   session?.user? <div>{JSON.stringify(session.user)}</div> : <div>Signed out</div>
 }
-    <Profile />  */}
+    <Profile />  */
+    }
     </div>
     
   )

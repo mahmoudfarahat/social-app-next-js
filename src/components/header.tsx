@@ -14,10 +14,11 @@ PopoverContent
 
 import { auth } from "@/auth";
 import * as actions from '@/actions'
+import { useSession } from "next-auth/react";
 export default async function Header() {
-    const session = await auth()
+    const session = useSession();
 let authContent  :React.ReactNode
-if(session?.user){
+if(session.data.user){
     authContent  = <Popover placement="left">
         <PopoverTrigger>
       <Avatar src={session.user.image || ''}/>
