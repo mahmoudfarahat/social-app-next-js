@@ -42,7 +42,7 @@ export function fetchPostsByTopicSlug(slug : string) {
 }
 
 
-export function fetchTopPosts(): Promise<PostWithData> {
+export function fetchTopPosts() {
     return db.post.findMany({
         orderBy:[
             {
